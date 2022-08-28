@@ -59,24 +59,26 @@
         </div>
     </footer>
     <div class="modal__bgd" id="form-modal">
-        <form action="#" class="modal__form">
-            <button class="close-btn">x</button>
-            <img src="img/trezub.svg" alt="trezub">
-            <h4 class="modal__form__title">Поділися, будь ласка, поштою</h4>
-            <p class="modal__form__text">та запиши гуся до бандерозагону</p>
-            <div class="modal__form__field">
-                <label for="user__name" class="modal__field__name">Ім'я</label>
-                <input type="text" class="modal__field__input" id="user__name">
-            </div>
-            <div class="modal__form__field">
-                <label for="user__email" class="modal__field__name">Email</label>
-                <input type="email" class="modal__field__input" id="user__email">
-            </div>
-            <button class="button__start modal__form__button" id="launch-btn">Запустити гуся</button>
-        </form>
+        <div class="modal__form_container">
+            <form action="#" class="modal__form" data-netlify="true">
+                <button class="close-btn">x</button>
+                <img src="img/trezub.svg" alt="trezub">
+                <h4 class="modal__form__title">Поділися, будь ласка, поштою</h4>
+                <p class="modal__form__text">та запиши гуся до бандерозагону</p>
+                <div class="modal__form__field">
+                    <label for="user__name" class="modal__field__name">Ім'я</label>
+                    <input type="text" class="modal__field__input" id="user__name" name="Ім'я">
+                </div>
+                <div class="modal__form__field">
+                    <label for="user__email" class="modal__field__name">Email</label>
+                    <input type="email" class="modal__field__input" id="user__email" name="Email">
+                </div>
+                <button class="button__start modal__form__button" id="launch-btn">Запустити гуся</button>
+            </form>
+        </div>
     </div>
     <div class="modal__bgd" id="success-modal">
-        <div class="modal">
+        <div class="modal modal__form_container">
             <button class="close-btn">x</button>
             <img src="img/trezub.svg" alt="trezub">
             <h4 class="modal__title">Дякуємо, гусь успішно запущений</h4>
